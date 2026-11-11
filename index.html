@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Brew Lagos — Artisan Coffee Delivered</title>
+    <meta name="description" content="Warm, handcrafted coffee for Lagos. Order online or via WhatsApp. Fresh beans, local love.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="#" class="logo">Morning Brew</a>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav class="nav-links">
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#order" class="cta">Order</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>Coffee made with Lagos warmth</h1>
+                <p>Small-batch, hand-roasted beans. Brewed slow, delivered fast. Order online or ping us on WhatsApp.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">See Menu</a>
+                    <a href="#" id="whatsapp-hero" class="btn btn-outline">WhatsApp Order</a>
+                </div>
+                <p class="note">Pickup & delivery in Lagos Island, Ikeja & Lekki. Daily 7am–7pm.</p>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=1200&auto=format&fit=crop" alt="Freshly brewed coffee being poured and served" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <p class="subtitle">Simple drinks, honest prices. Made to order.</p>
+            <div class="menu-grid">
+                <article class="card">
+                    <div class="price-row">
+                        <h3>Espresso</h3>
+                        <span class="price-leader"></span>
+                        <span class="price">₦1,200</span>
+                    </div>
+                    <p>Short, bold, pure.</p>
+                </article>
+                <article class="card">
+                    <div class="price-row">
+                        <h3>Flat White</h3>
+                        <span class="price-leader"></span>
+                        <span class="price">₦1,800</span>
+                    </div>
+                    <p>Silky milk, smooth roast.</p>
+                </article>
+                <article class="card">
+                    <div class="price-row">
+                        <h3>Cappuccino</h3>
+                        <span class="price-leader"></span>
+                        <span class="price">₦2,000</span>
+                    </div>
+                    <p>Classic foam, warm heart.</p>
+                </article>
+                <article class="card">
+                    <div class="price-row">
+                        <h3>Cold Brew</h3>
+                        <span class="price-leader"></span>
+                        <span class="price">₦2,200</span>
+                    </div>
+                    <p>12-hour steep. Lagos heat approved.</p>
+                </article>
+                <article class="card">
+                    <div class="price-row">
+                        <h3>Batch Brew</h3>
+                        <span class="price-leader"></span>
+                        <span class="price">₦1,500</span>
+                    </div>
+                    <p>Filter coffee, served fresh.</p>
+                </article>
+                <article class="card">
+                    <div class="price-row">
+                        <h3>Artisan Pastry</h3>
+                        <span class="price-leader"></span>
+                        <span class="price">₦800–₦1,500</span>
+                    </div>
+                    <p>Daily bake. Croissant, chin chin, danish.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="images/coffee.jpg" alt="Freshly brewed coffee being served at a cozy Lagos cafe">
+            </div>
+            <div class="about-copy">
+                <h2>About Us</h2>
+                <p>Born in a Lagos kitchen. Now brewing across the city.</p>
+                <p>It started with one stubborn roasting pan and a stubborn belief: Lagos deserves coffee that tastes like the city feels — full of life. So we roast in small batches, buy beans directly from growers, and never let a bag sit around longer than a week.</p>
+                <p>Every cup is ground to order, brewed with filtered water, and handed over (or dropped off) warm. No shortcuts, no syrups hiding stale beans — just coffee we'd proudly serve our own family.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="section order">
+        <div class="container">
+            <h2>Order Now</h2>
+            <p class="subtitle">Quickest way is WhatsApp. We reply fast, confirm, and deliver.</p>
+            <form id="order-form" class="order-form">
+                <label>Name
+                    <input type="text" id="name" placeholder="Your name" required>
+                </label>
+                <label>WhatsApp Number
+                    <input type="tel" id="phone" placeholder="080..." required>
+                </label>
+                <label>Items
+                    <textarea id="items" placeholder="e.g., 2x Flat White, 1x Cold Brew" required></textarea>
+                </label>
+                <label>Location
+                    <input type="text" id="location" placeholder="Lagos Island, Ikeja..." required>
+                </label>
+                <button type="submit" class="btn btn-primary full">Send via WhatsApp</button>
+                <p class="form-note">We’ll open WhatsApp with your order pre-filled.</p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Morning Brew Lagos. Made with love, not corporate.</p>
+            <p class="small">Lagos, Nigeria • hello@morningbrew.lagos</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
